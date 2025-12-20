@@ -15,6 +15,17 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/7163c22952.js" crossorigin="anonymous"></script>
+
+    <script>
+        const now = new Date();
+
+        if (now.getMonth() === 11) {
+            const script = document.createElement("script");
+            script.src = "https://app.embed.im/snow.js";
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+    </script>
 </head>
 
 <body>
