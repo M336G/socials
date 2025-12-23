@@ -19,9 +19,18 @@
     <script>
         const now = new Date();
 
+        // Snow effect on December
         if (now.getMonth() === 11) {
             const script = document.createElement("script");
             script.src = "https://app.embed.im/snow.js";
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+
+        // Confetti effect on January 1st
+        if (now.getMonth() === 0 && now.getDate() === 1) {
+            const script = document.createElement("script");
+            script.src = "https://app.embed.im/confetti.js";
             script.defer = true;
             document.head.appendChild(script);
         }
